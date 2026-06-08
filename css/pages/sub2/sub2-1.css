@@ -1,0 +1,16 @@
+@import url("../../common/header.css");
+@import url("../../common/footer.css");
+@import url("../../common/reset.css");
+@import url("../../../../../../css/reset.css");
+@import url("../../container/sub2/sub2-1Container.css");
+nav{
+  border-bottom: 1px solid var(--border-color);
+}
+@media only screen and (max-width: 768px) {
+  header{
+    border-bottom: 1px solid var(--border-color);
+  }
+  nav{
+    border-bottom: none;
+  }
+}

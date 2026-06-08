@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니</title>
+  <!-- js -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script src="js/js_cart.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pages/cart.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header include -->
+    <div class="header-include"></div>
+    <!-- container -->
+    <main class="container">
+      <!-- section1: order details -->
+      <section id="sec1">
+        <div class="inner">
+          <h2>장바구니</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="mobile">
+                  <input id="total-check" type="checkbox" checked>
+                  <label class="total-check-label" for="total-check"></label>
+                </th>
+                <th>상품정보</th>
+                <th>수량</th>
+                <th>주문금액</th>
+                <th>할인금액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="check">
+                  <input id="check-btn0" type="checkbox" checked>
+                  <label for="check-btn0"></label>
+                </td>
+                <td class="thum-img">
+                  <img src="img/product/amuseables30.jpg" alt="[어뮤저블]플랜츠 앤 우드 - 솔방울">
+                </td>
+                <td class="product-info">
+                  <p class="product-name">[어뮤저블]플랜츠 앤 우드 - 솔방울</p>
+                  <p class="price">
+                    <span class="before-discount" data-price="39200"></span>
+                    <span class="after-discount" data-price="35500"></span>
+                  </p>
+                </td>
+                <td class="product-count have-label">
+                  <label for="count0">수량</label>
+                  <div class="input-box">
+                    <span class="minus-btn"><span class="ir_pm">빼기</span></span>
+                    <input id="count0" type="number" value="1" min="1">
+                    <span class="plus-btn"><span class="ir_pm">더하기</span></span>
+                  </div>
+                </td>
+                <td class="total-price have-label">
+                  <label for="total0">주문금액</label>
+                  <div class="input-box">
+                    <input id="total0" type="text" disabled>
+                  </div>
+                </td>
+                <td class="discount-price have-label">
+                  <label for="discount0">할인금액</label>
+                  <div class="input-box">
+                    <input id="discount0" type="text" disabled>
+                  </div>
+                </td>
+                <td class="delete-btn">
+                  <img src="img/icon/close.svg" alt="삭제">
+                </td>
+              </tr>
+              <tr>
+                <td class="check">
+                  <input id="check-btn1" type="checkbox" checked>
+                  <label for="check-btn1"></label>
+                </td>
+                <td class="thum-img">
+                  <img src="img/product/amuseables50.jpg" alt="상품 썸네일">
+                </td>
+                <td class="product-info">
+                  <p class="product-name">[어뮤저블]디저트 카페 - 밀푀유 </p>
+                  <p class="price">
+                    <span class="before-discount" data-price="42250"></span>
+                    <span class="after-discount" data-price="35950"></span>
+                  </p>
+                </td>
+                <td class="product-count have-label">
+                  <label for="count1">수량</label>
+                  <div class="input-box">
+                    <span class="minus-btn"><span class="ir_pm">빼기</span></span>
+                    <input id="count1" type="number" value="1" min="1">
+                    <span class="plus-btn"><span class="ir_pm">더하기</span></span>
+                  </div>
+                </td>
+                <td class="total-price have-label">
+                  <label for="total1">주문금액</label>
+                  <div class="input-box">
+                    <input id="total1" type="text" disabled>
+                  </div>
+                </td>
+                <td class="discount-price have-label">
+                  <label for="discount1">할인금액</label>
+                  <div class="input-box">
+                    <input id="discount1" type="text" disabled>
+                  </div>
+                </td>
+                <td class="delete-btn">
+                  <img src="img/icon/close.svg" alt="삭제">
+                </td>
+              </tr>
+              <tr>
+                <td class="check">
+                  <input id="check-btn2" type="checkbox" checked>
+                  <label for="check-btn2"></label>
+                </td>
+                <td class="thum-img">
+                  <img src="img/product/amuseables21.jpg" alt="[어뮤저블]후르츠 앤 배지 - 레몬">
+                </td>
+                <td class="product-info">
+                  <p class="product-name">[어뮤저블]후르츠 앤 배지 - 레몬</p>
+                  <p class="price">
+                    <span class="before-discount" data-price="29890"></span>
+                    <span class="after-discount" data-price="26450"></span>
+                  </p>
+                </td>
+                <td class="product-count have-label">
+                  <label for="count2">수량</label>
+                  <div class="input-box">
+                    <span class="minus-btn"><span class="ir_pm">빼기</span></span>
+                    <input id="count2" type="number" value="1" min="1">
+                    <span class="plus-btn"><span class="ir_pm">더하기</span></span>
+                  </div>
+                </td>
+                <td class="total-price have-label">
+                  <label for="total2">주문금액</label>
+                  <div class="input-box">
+                    <input id="total2" type="text" disabled>
+                  </div>
+                </td>
+                <td class="discount-price have-label">
+                  <label for="discount2">할인금액</label>
+                  <div class="input-box">
+                    <input id="discount2" type="text" disabled>
+                  </div>
+                </td>
+                <td class="delete-btn">
+                  <img src="img/icon/close.svg" alt="삭제">
+                </td>
+              </tr>
+              <tr>
+                <td class="check">
+                  <input id="check-btn3" type="checkbox" checked>
+                  <label for="check-btn3"></label>
+                </td>
+                <td class="thum-img">
+                  <img src="img/product/amuseables16.jpg" alt="상품 썸네일">
+                </td>
+                <td class="product-info">
+                  <p class="product-name">[어뮤저블]후르츠 앤 배지 - 복숭아</p>
+                  <p class="price">
+                    <span class="before-discount" data-price="29890"></span>
+                    <span class="after-discount" data-price="28850"></span>
+                  </p>
+                </td>
+                <td class="product-count have-label">
+                  <label for="count3">수량</label>
+                  <div class="input-box">
+                    <span class="minus-btn"><span class="ir_pm">빼기</span></span>
+                    <input id="count3" type="number" value="1" min="1">
+                    <span class="plus-btn"><span class="ir_pm">더하기</span></span>
+                  </div>
+                </td>
+                <td class="total-price have-label">
+                  <label for="total3">주문금액</label>
+                  <div class="input-box">
+                    <input id="total3" type="text" disabled>
+                  </div>
+                </td>
+                <td class="discount-price have-label">
+                  <label for="discount3">할인금액</label>
+                  <div class="input-box">
+                    <input id="discount3" type="text" disabled>
+                  </div>
+                </td>
+                <td class="delete-btn">
+                  <img src="img/icon/close.svg" alt="삭제">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="empty-cart">
+            <p>장바구니에 담긴 상품이 없어요</p>
+            <a href="sub1-3.html">상품 보러 가기</a>
+          </div>
+        </div>
+      </section>
+      <!-- section2: payment details -->
+      <section id="sec2">
+        <div class="inner">
+          <h3 class="hide-title">구매 정보</h3>
+          <div class="caution">
+            <div class="txt-box">
+              <p>배송완료 후 14일 이내 청약철회(반품)가 가능합니다. 자세한 내용은 반품 및 환불을 확인해주세요.</p>
+            </div>
+            <div class="txt-box">
+              <p>배송정보안내</p>
+              <p>-3일 이내에 발송됩니다(주말 및 공휴일 제외) 주문 상품의 품절 및 배송 지연 예상 시에는 유선 또는 SMS 안내</p>
+              <p>-일부 군사지역은 배송이 불가능할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="buy-summary">
+            <ul class="price-details">
+              <li>
+                <label for="product-price">총 상품금액</label>
+                <div class="input-box">
+                  <input id="product-price" type="text" disabled>
+                  <span>원</span>
+                </div>
+              </li>
+              <li>
+                <label for="shipment-price">배송비</label>
+                <div class="input-box">
+                  <input id="shipment-price" type="text" value="2,500" disabled data-price="2500">
+                  <span>원</span>
+                </div>
+              </li>
+              <li class="discount">
+                <label for="discounts-price">총 할인금액</label>
+                <div class="input-box">
+                  <input id="discounts-price" type="text" disabled>
+                  <span>원</span>
+                </div>
+              </li>
+              <li class="total">
+                <label for="total-price">총 결제 예정 금액</label>
+                <div class="input-box">
+                  <input id="total-price" type="text" disabled>
+                  <span>원</span>
+                </div>
+              </li>
+            </ul>
+            <button>주문하기</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer include -->
+    <div class="footer-include"></div>
+  </div>
+</body>
+</html>

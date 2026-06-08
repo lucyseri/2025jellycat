@@ -1,0 +1,319 @@
+/*common*/
+form ul li{
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(30px, 94px) auto;
+  margin-bottom: 16px;
+}
+form ul li .label{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  word-break: keep-all;
+  padding: 16px 0;
+}
+form ul li .input-box{
+  display: grid;
+}
+form ul li .input-box .input-list{
+  display: grid;
+  align-items: center;
+}
+form ul li .input-box .input-list label{
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  opacity: 0;
+}
+form ul li .input-box .input-list input, select{
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: var(--background-color);
+}
+form ul li .input-box .input-list input{
+  padding: 8px 16px;
+}
+form ul li .input-box .input-list select{
+  background: url("../../img/icon/down-arrow.svg") no-repeat right 8px center / 20px;
+  background-color: var(--background-color);
+  -webkit-appearance:none; 
+  -moz-appearance:none; 
+  appearance:none;
+  padding: 8px 30px 8px 16px;
+}
+form ul li .input-box .input-list input::placeholder{
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--txt2-color);
+}
+form ul li .input-box .input-list .txt-btn{
+  display: block;
+  height: 38px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--icon1-color);
+  color: var(--icon1-color);
+  text-align: center;
+  margin-left: 32px;
+}
+form ul li .input-box .input-list .txt{
+  color: var(--txt2-color);
+  text-align: center;
+}
+/*layout*/
+main section{
+  padding: 0 20px;
+}
+main section .inner{
+  width: 100%;
+  max-width: 816px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+main .inner h2{
+  text-align: center;
+}
+/*section1*/
+.sec1 .inner form{
+  padding: 24px 0;
+}
+.sec1 .inner form .user-info{
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+}
+.sec1 .inner form .user-info .name-list .input-box .input-list{
+  grid-template-columns: 0 minmax(180px, 286px);
+}
+.sec1 .inner form .user-info .phone-list .input-box .input-list{
+  align-items: center;
+  grid-template-columns: 0 minmax(180px, 392px) 102px;
+}
+.sec1 .inner form .user-info .email-list .input-box{
+  grid-template-columns: minmax(212px, 286px) minmax(auto, 180px) minmax(auto, 196px);
+}
+.sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(1){
+  grid-template-columns: 0 minmax(180px, 286px) 32px;
+}
+.sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(3){
+  margin-left: 16px;
+}
+.sec1 .inner form .user-info .birth-list .input-box{
+  grid-template-columns: repeat(3, minmax(auto, 212px));
+}
+.sec1 .inner form .user-info .birth-list .input-box .input-list{
+  grid-template-columns: 0 minmax(auto, 180px) 32px;
+}
+.sec1 .inner form .user-info .address-list .input-box{
+  grid-template-rows: repeat(3, minmax(44px, auto));
+  gap: 8px;
+}
+.sec1 .inner form .user-info .address-list .input-box .input-list:nth-child(1){
+  grid-template-columns: 0 minmax(180px, 286px) 102px;
+}
+.sec1 .inner form .user-account{
+  padding: 32px 0 24px;
+}
+.sec1 .inner form .user-account .id-list .input-box .input-list{
+  grid-template-columns: 0 minmax(180px, 286px) 102px;
+}
+.sec1 .inner form .user-account .pw-list .input-box .input-list{
+  grid-template-columns: 0 minmax(180px, 392px) auto;
+}
+.sec1 .inner form .user-account .pw-list .input-box .input-list .pw-caution{
+  font-size: 14px;
+  color: var(--secondary-color);
+  margin-left: 32px;
+}
+.sec1 .inner form .user-account .pw-check-list .input-box .input-list{
+  grid-template-columns: 0 minmax(180px, 392px) auto;
+}
+.sec1 .inner form .user-account .pw-check-list .input-box .input-list .pw-state{
+  display: none;
+  margin-left: 32px;
+  font-size: 14px;
+}
+.sec1 .inner form button{
+  display: block;
+  width: 100%;
+  max-width: 392px;
+  margin: 0 auto;
+  padding: 16px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--onPrimary-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 10px;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+}
+/*responsive*/
+@media only screen and (max-width: 768px) {
+  /*common*/
+  form ul li{
+    gap: 16px;
+    grid-template-columns: minmax(30px, 104px) auto;
+  }
+  form ul li .input-box .input-list .txt-btn{
+    margin-left: 16px;
+  }
+  /*layout*/
+  main section{
+    padding: 0 32px;
+  }
+  main section .inner{
+    max-width: 704px;
+  }
+  /*form*/
+  .sec1 .inner form .user-info .name-list .input-box .input-list{
+    grid-template-columns: 0 minmax(180px, 344px);
+  }
+  .sec1 .inner form .user-info .phone-list .input-box .input-list{
+    align-items: center;
+    grid-template-columns: 0 minmax(180px, 464px) 86px;
+  }
+  .sec1 .inner form .user-info .email-list .input-box{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, minmax(44px, auto));
+    gap: 8px 16px;
+    margin-bottom: 8px;
+  }
+  .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(1){
+    grid-area: 1/1/2/4;
+    grid-template-columns: 0 auto 32px;
+  }
+  .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(2){
+    grid-area: 2/1/3/3;
+  }
+  .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(3){
+    grid-area: 2/3/3/5;
+    margin-left: 0;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, minmax(44px, auto));
+    gap: 8px 16px;
+    margin-bottom: 8px;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list{
+    grid-template-columns: 0 auto 32px;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list:nth-child(1){
+    grid-area: 1/1/2/4;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list:nth-child(2){
+    grid-area: 2/1/3/3;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list:nth-child(3){
+    grid-area: 2/3/3/5;
+  }
+  .sec1 .inner form .user-info .address-list .input-box .input-list:nth-child(1){
+    grid-template-columns: 0 minmax(180px, 344px) 86px;
+  }
+  .sec1 .inner form .user-account .id-list .input-box .input-list{
+    grid-template-columns: 0 minmax(180px, 344px) 86px;
+  }
+  .sec1 .inner form .user-account .pw-list .input-box .input-list{
+    grid-template-columns: 0 minmax(180px, 344px) auto;
+  }
+  .sec1 .inner form .user-account .pw-list .input-box .input-list .pw-caution{
+    margin-left: 16px;
+  }
+  .sec1 .inner form .user-account .pw-check-list .input-box .input-list{
+    grid-template-columns: 0 minmax(180px, 344px) auto;
+  }
+  .sec1 .inner form .user-account .pw-check-list .input-box .input-list .pw-state{
+    margin-left: 16px;
+  }
+  .sec1 .inner form button{
+    max-width: 464px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /*common*/
+  form ul li{
+    gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, minmax(28px, max-content));
+  }
+  form ul li .label{
+    padding: 0;
+  }
+  form ul li .input-box .input-list .txt-btn{
+    height: 32px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 4px;
+    margin-left: 16px;
+  }
+  /*layout*/
+  main section{
+    padding: 0 20px;
+  }
+  main section .inner{
+    max-width: 320px;
+  }
+  /*form*/
+  .sec1 .inner form .user-info .name-list .input-box .input-list{
+    grid-template-columns: 0 minmax(180px, 264px);
+  }
+  .sec1 .inner form .user-info .phone-list .input-box .input-list{
+    align-items: center;
+    grid-template-columns: 0 minmax(180px, 208px) max-content;
+  }
+  .sec1 .inner form .user-info .email-list .input-box{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(1){
+    grid-area: 1/1/2/6;
+    grid-template-columns: 0 auto 24px;
+  }
+  .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(2){
+    grid-area: 2/1/3/4;
+  }
+  .sec1 .inner form .user-info .email-list .input-box .input-list:nth-child(3){
+    grid-area: 2/4/3/7;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list{
+    grid-template-columns: 0 auto 24px;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list:nth-child(1){
+    grid-area: 1/1/2/5;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list:nth-child(2){
+    grid-area: 2/1/3/4;
+  }
+  .sec1 .inner form .user-info .birth-list .input-box .input-list:nth-child(3){
+    grid-area: 2/4/3/7;
+  }
+  .sec1 .inner form .user-info .address-list .input-box .input-list:nth-child(1){
+    grid-template-columns: 0 minmax(180px, 208px) max-content;
+  }
+  .sec1 .inner form .user-account .id-list .input-box .input-list{
+    grid-template-columns: 0 minmax(180px, 208px) max-content;
+  }
+  .sec1 .inner form .user-account .pw-list .input-box .input-list{
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .sec1 .inner form .user-account .pw-check-list .input-box .input-list{
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+}

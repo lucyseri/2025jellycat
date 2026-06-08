@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상세페이지</title>
+  <!-- js & jq -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script src="js/js_product.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pages/product.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header include -->
+    <div class="header-include"></div>
+    <!-- container -->
+    <main class="container">
+      <!-- section1: phrchase info -->
+      <section id="sec1">
+        <div class="inner">
+          <h3 class="hide-title">구매정보</h3>
+          <div class="img-box">
+            <div class="thum-box">
+              <span class="up-arrow arrow-btn">
+                <span class="ir_pm">이전</span>
+              </span>
+              <ul class="thum-imgs">
+                <li><img class="active-img" src="img/product/amuseables42.jpg" alt="데이지 썸네일 이미지 정면"></li>
+                <li><img src="img/daisy_back.jpg" alt="데이지 썸네일 이미지 뒷면"></li>
+                <li><img src="img/daisy_side.jpg" alt="데이지 썸네일 이미지 측면"></li>
+              </ul>
+              <span class="down-arrow arrow-btn">
+                <span class="ir_pm">다음</span>
+              </span>
+            </div>
+            <div class="product-img">
+              <img src="img/product/amuseables42.jpg" alt="상품이미지">
+            </div>
+          </div>
+          <div class="order-box">
+            <div class="order-inner">
+              <div class="product-info">
+                <p class="product-line">Soft Toy</p>
+                <p class="product-name">[어뮤저블]플랜츠 앤 우드 데이지</p>
+                <p class="product-price" data-price="18450">18,450원</p>
+              </div>
+              <div class="product-count">
+                <label for="count">수량</label>
+                <div class="input-box">
+                  <span class="plus-btn count-btn"><span class="ir_pm">더하기</span></span>
+                  <input id="count" name="count" type="number" value="1" min="1">
+                  <span class="minus-btn count-btn"><span class="ir_pm">빼기</span></span>
+                </div>
+              </div>
+              <div class="price">
+                <label for="total-price">총 상품금액</label>
+                <div class="input-box">
+                  <input id="total-price" name="total-price" type="text" value="12,450" disabled>
+                  <span>원</span>
+                </div>
+              </div>
+              <ul class="order-btns">
+                <button class="buy">바로구매</button>
+                <button class="cart">장바구니 담기</button>
+                <button class="heart"><span class="ir_pm">좋아요</span></button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section2: product detail info -->
+      <section id="sec2">
+        <div class="inner">
+          <h3 class="hide-title">상세 정보</h3>
+          <ul class="tab-btn">
+            <li class="tab-active"><a href="#sec2">상세정보</a></li>
+            <li><a href="#sec3">주문 및 배송</a></li>
+            <li><a href="#sec4">교환 및 환불</a></li>
+          </ul>
+          <div class="product-details">
+            <img src="img/daisy_0.png" alt="어뮤저블 데이지와 함께하는 싱그러운 매일매일">
+            <img src="img/daisy_1.png" alt="젤리캣은 런던에서 탄생한 프리미엄 소프트 토이 전문 브랜드입니다">
+            <img src="img/daisy_2.png" alt="젤리캣의 시들지 않는 어뮤저블 플랜츠 & 우드 라인">
+            <img src="img/daisy_3.png" alt="데이지 정면, 후면, 측면 이미지">
+            <img src="img/daisy_4.png" alt="크기 34cm * 11cm * 11cm 폴리에스테르 PE Beans">
+          </div>
+        </div>
+      </section>
+      <!-- section3: order & shipment -->
+      <section id="sec3">
+        <div class="inner">
+          <h3 class="hide-title">주문 및 배송 정보</h3>
+          <ul class="tab-btn">
+            <li><a href="#sec2">상세정보</a></li>
+            <li class="tab-active"><a href="#sec3">주문 및 배송</a></li>
+            <li><a href="#sec4">교환 및 환불</a></li>
+          </ul>
+          <div class="shipment">
+            <table>
+              <tr>
+                <th>배송방식</th>
+                <td>
+                  <p>젤리캣 코리아 물류센터 직접배송</p>
+                </td>
+              </tr>
+              <tr>
+                <th>배송지역</th>
+                <td>
+                  <p>전국(일부지역 제외)</p>
+                </td>
+              </tr>
+              <tr>
+                <th>배송비용</th>
+                <td>
+                  <p>3,000원</p>
+                  <p>도서산간지역은 추가 배송비가 발생할 수 있습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>배송기간</th>
+                <td>
+                  <p>결제 후 5 ~ 10일 이내(영업일 기준)</p>
+                </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>
+                  <p>-상품의 재고상황에 따라 배송기간이 다소 지연될 수도 있습니다.</p>
+                  <p>-물류센터 사정으로 인해 배송이 지연될 수 있습니다.</p>
+                  <p>-기본 배송기간 이상 소요되는 상품이거나 품절된 상품은 개별 연락 드립니다.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- section4: refund -->
+      <section id="sec4">
+        <div class="inner">
+          <h3 class="hide-title">환불 정보</h3>
+          <ul class="tab-btn">
+            <li><a href="#sec2">상세정보</a></li>
+            <li><a href="#sec3">주문 및 배송</a></li>
+            <li class="tab-active"><a href="#sec4">교환 및 환불</a></li>
+          </ul>
+          <div class="refund">
+            <table>
+              <tr>
+                <th>교환/반품 방법</th>
+                <td>
+                  <p>변심에 의한 반품은 상품을 수령한 날로부터 7일 이내 신청 가능합니다.</p>
+                  <p>표시/광고 내용과 다르거나 제품의 하자 등 계약 내용과 다르게 이행된 경우에는 상품 수령 후 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내 교환/반품 신청 가능합니다.</p>
+                  <p>교환/반품을 신청할 경우 1:1문의 또는 CS Center(1234-57678)를 통해 접수 바랍니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>교환/반품 불가한 경우</th>
+                <td>
+                  <p>상품 수령 후 교환 및 반품 가능 기간을 초과한 경우</p>
+                  <p>구매자 귀책 사유로 상품 등이 멸실/훼손되거나 상품 가치가 현저히 감소한 경우(단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외).</p>
+                  <p>복제가 가능한 상품 등의 포장을 훼손한 경우(도서 등).</p>
+                  <p>그 외 자세한 내용은 상품 상세페이지(상품정보)를 참고 바랍니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>교환/반품 비용</th>
+                <td>
+                  <p>변심에 의한 반품의 경우 왕복 배송비(6,000원)는 구매자가 부담합니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>
+                  <p>젤리캣에서 발생되는 모든 교환/반품은 전자상거래 등에서의 소비자 보호에 관한 법률 및 동법 시행령에 따릅니다.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer include -->
+    <div class="footer-include"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>악세사리</title>
+  <!-- js & jq -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script type="module" src="js/sub1/js_sub1-5.js"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pages/sub1/sub1-4.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header include -->
+    <div class="header-include"></div>
+    <!-- container -->
+    <main class="container">
+      <!-- section1: title -->
+      <section id="sec1">
+        <div class="inner">
+          <div class="title">
+            <h2>ACCESSORIES</h2>
+            <select name="product-array" id="product-array">
+              <option value="newst" selected>최신순</option>
+              <option value="popularity">인기순</option>
+              <option value="high-price">가격 높은순</option>
+              <option value="low-price">가격 낮은순</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <!-- section2: category banner -->
+      <section id="sec2">
+        <h3 class="hide-title">배너 이미지</h3>
+        <img class="web-banner" src="img/web_subpageBanner4.png" alt="new banner">
+        <img class="tablet-banner" src="img/tablet_subpageBanner4.png" alt="new banner">
+        <img class="mobile-banner" src="img/mobile_subpageBanner4.png" alt="new banner">
+      </section>
+      <!-- section3: products -->
+      <section id="sec3">
+        <div class="inner">
+          <h3 class="hide-title">상품 리스트</h3>
+          <div class="category-select">
+            <ul class="category-btns">
+              <li class="current-category">전체</li>
+              <li><a href="sub2-3-1.html">가방</a></li>
+              <li><a href="sub2-3-2.html">키링</a></li>
+              <li><a href="sub2-3-3.html">아기 장난감</a></li>
+              <li><a href="sub2-3-4.html">담요 앤 컴포터</a></li>
+            </ul>
+            <span class="more-btn"><img src="img/icon/down-arrow.svg" alt="더보기"></span>
+          </div>
+          <div class="products">
+            <ul class="products-con">
+              <li class="product-item product-compo">
+                <a href="#">
+                  <img src="img/product/amuseables15.jpg" alt="[소프트 토이]어뮤저블 디저트 카페 딸기 타르트">
+                  <div class="product-info">
+                    <p class="name">1</p>
+                    <div class="price-info">
+                      <p class="price">15,800</p>
+                      <span class="heart-icon">
+                        <span class="ir_pm">관심상품 담기</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pager">
+            <span class="arrow-btn big-left-arrow"><img src="img/icon/big-arrow.svg" alt="이전"></span>
+            <span class="arrow-btn left-arrow"><img src="img/icon/arrow.svg" alt="이전"></span>
+            <div class="pager-box">
+              <ul class="pager-btns">
+                <li class="current-page">1</li>
+                <li>2</li>
+              </ul>
+            </div>
+            <span class="arrow-btn right-arrow"><img src="img/icon/arrow.svg" alt="다음"></span>
+            <span class="arrow-btn big-right-arrow"><img src="img/icon/big-arrow.svg" alt="다음"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer include -->
+    <div class="footer-include"></div>
+  </div>
+</body>
+</html>

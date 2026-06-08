@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>젤리캣 회원가입</title>
+  <!-- js & jq -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script src="js/js_join.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pages/join.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header include -->
+    <div class="header-include"></div>
+    <!-- container -->
+    <main class="container">
+      <!-- section1: join form -->
+      <section class="sec1">
+        <div class="inner">
+          <h2>회원가입</h2>
+          <form action="#" method="post">
+            <ul class="user-info">
+              <li class="name-list">
+                <span class="label">이름</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="user-name">
+                  </div>
+                </div>
+              </li>
+              <li class="phone-list">
+                <span class="label">핸드폰 번호</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="phone-num">핸드폰 번호</label>
+                    <input type="text" id="phone-num" name="phone-num" placeholder="공백 없이 숫자11자">
+                    <span class="txt-btn">본인인증</span>
+                  </div>
+                </div>
+              </li>
+              <li class="email-list">
+                <span class="label">이메일주소</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="email-id">이메일아이디</label>
+                    <input type="text" id="email-id" name="email-id">
+                    <span class="txt">@</span>
+                  </div>
+                  <div class="input-list">
+                    <label for="email-domain">이메일도메인</label>
+                    <input type="text" id="email-domain" name="email-domain">
+                  </div>
+                  <div class="input-list">
+                    <label for="domain-select">이메일도메인 선택</label>
+                    <select name="domain-select" id="domain-select" name="domain-select">
+                      <option value="type" selected>직접입력</option>
+                      <option value="gmail.com">gmail.com</option>
+                      <option value="naver.com">naver.com</option>
+                      <option value="hanmail.net">hanmail.net</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="birth-list">
+                <span class="label">생년월일</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="birth-year">생년</label>
+                    <input type="text" id="birth-year" name="birth-year" placeholder="YYYY">
+                    <span class="txt">년</span>
+                  </div>
+                  <div class="input-list">
+                    <label for="birth-month">생년월</label>
+                    <input type="text" id="birth-month" placeholder="MM">
+                    <span class="txt">월</span>
+                  </div>
+                  <div class="input-list">
+                    <label for="birth-date">생년일</label>
+                    <input type="text" id="birth-date" name="birth-date" placeholder="DD">
+                    <span class="txt">일</span>
+                  </div>
+                </div>
+              </li>
+              <li class="address-list">
+                <span class="label">주소</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="address-num" class="address-off">우편번호</label>
+                    <input type="text" id="address-num" name="address-num">
+                    <span class="txt-btn">우편번호</span>
+                  </div>
+                  <div class="input-list">
+                    <label for="address">주소</label>
+                    <input type="text" id="address" name="address">
+                  </div>
+                  <div class="input-list">
+                    <label for="detail-address" class="address-off">상세주소</label>
+                    <input type="text" id="detail-address" name="detail-address">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="user-account">
+              <li class="id-list">
+                <span class="label">아이디</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="user-id">아이디</label>
+                    <input id="user-id" name="user-id" type="text">
+                    <span class="txt-btn">중복확인</span>
+                  </div>
+                </div>
+              </li>
+              <li class="pw-list">
+                <span class="label">비밀번호</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="user-pw">비밀번호</label>
+                    <input id="user-pw" name="user-pw" type="password" minlength="4">
+                    <span class="pw-caution">*영문과 숫자를 조합한 8자리 이상</span>
+                  </div>
+                </div>
+              </li>
+              <li class="pw-check-list">
+                <span class="label">비밀번호 확인</span>
+                <div class="input-box">
+                  <div class="input-list">
+                    <label for="user-pw2">비밀번호 확인</label>
+                    <input id="user-pw2" name="user-pw2" type="password" minlength="4">
+                    <span class="pw-state">비밀번호를 다시 확인해주세요!</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button>회원가입</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- header include -->
+    <div class="footer-include"></div>
+  </div>
+</body>
+</html>

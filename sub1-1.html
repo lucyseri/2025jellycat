@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>베스트 젤리캣</title>
+  <!-- js & jq -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_common.js" defer></script>
+  <script src="js/sub1/js_sub1-1.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/pages/sub1/sub1-1.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header include -->
+    <div class="header-include"></div>
+    <!-- container -->
+    <main class="container">
+      <!-- section1: title -->
+      <section id="sec1">
+        <div class="inner">
+          <div class="title">
+            <h2>BEST</h2>
+            <select name="product-array" id="product-array">
+              <option value="newst">최신순</option>
+              <option value="popularity" selected>인기순</option>
+              <option value="high-price">가격 높은순</option>
+              <option value="low-price">가격 낮은순</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <!-- section2: category banner -->
+      <section id="sec2">
+        <h3 class="hide-title">배너</h3>
+        <img class="web-banner" src="img/web_subpageBanner6.png" alt="new banner">
+        <img class="tablet-banner" src="img/tablet_subpageBanner6.png" alt="new banner">
+        <img class="mobile-banner" src="img/mobile_subpageBanner6.png" alt="new banner">
+      </section>
+      <!-- products -->
+      <section id="sec3">
+        <div class="inner">
+          <h3 class="hide-title">상품 리스트</h3>
+          <div class="category-select">
+            <ul class="category-btns">
+              <li class="current-category">전체</li>
+              <li>애니멀스</li>
+              <li>어뮤저블</li>
+              <li>악세서리</li>
+              <li>기프트</li>
+              <li>책</li>
+            </ul>
+            <span class="more-btn"><img src="img/icon/down-arrow.svg" alt="더보기"></span>
+          </div>
+          <div class="products">
+            <ul class="best-con">
+              <li class="best-item product-compo">
+                <a href="product.html">
+                  <img src="img/product/amuseables15.jpg" alt="딸기 타르트 소프트 토이">
+                  <div class="product-info">
+                    <span class="rank">1</span>
+                    <div class="product-description">
+                      <p class="name">[소프트 토이] 어뮤저블 디저트 카페 - 딸기 따르트 딸기 따르트 딸기 따르트 딸기 따르트 </p>
+                      <div class="price-info">
+                        <p class="price">15,800</p>
+                        <span class="heart-icon">
+                          <span class="ir_pm">관심상품 담기</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pager">
+            <span class="arrow-btn big-left-arrow"><img src="img/icon/big-arrow.svg" alt="이전"></span>
+            <span class="arrow-btn left-arrow"><img src="img/icon/arrow.svg" alt="이전"></span>
+            <div class="pager-box">
+              <ul class="pager-btns">
+                <li class="current-page">1</li>
+                <li>2</li>
+              </ul>
+            </div>
+            <span class="arrow-btn right-arrow"><img src="img/icon/arrow.svg" alt="다음"></span>
+            <span class="arrow-btn big-right-arrow"><img src="img/icon/big-arrow.svg" alt="다음"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer include -->
+    <div class="footer-include"></div>
+  </div>
+</body>
+</html>

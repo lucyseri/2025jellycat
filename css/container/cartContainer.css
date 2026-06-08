@@ -1,0 +1,481 @@
+/*layout*/
+.container{
+  margin: 60px 0;
+  padding: 0 20px;
+}
+.container section .inner{
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/*common*/
+input, button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+/*section1*/
+#sec1 h2{
+  text-align: center;
+}
+#sec1 table{
+  margin: 32px 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+#sec1 table thead{
+  display: block;
+  width: 100%;
+}
+#sec1 table thead tr{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 24px 0;
+}
+#sec1 table thead tr th{
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#sec1 table thead tr th:nth-child(1){
+  grid-area: 1/1/2/2;
+}
+#sec1 table thead tr th:nth-child(1) input{
+  display: none;
+}
+#sec1 table thead tr th:nth-child(1) label{
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  background: url("../../img/icon/check.svg") no-repeat center / auto;
+}
+#sec1 table thead tr th:nth-child(1) input:checked + label{
+  background: url("../../img/icon/checked.svg") no-repeat center / auto;
+}
+#sec1 table thead tr th:nth-child(2){
+  grid-area: 1/2/2/7;
+}
+#sec1 table thead tr th:nth-child(3){
+  grid-area: 1/7/2/9;
+}
+#sec1 table thead tr th:nth-child(4){
+  grid-area: 1/9/2/11;
+}
+#sec1 table thead tr th:nth-child(5){
+  grid-area: 1/11/2/12;
+}
+#sec1 table tbody{
+  display: block;
+  width: 100%;
+  margin: 32px 0;
+}
+#sec1 table tbody tr{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  align-items: center;
+  margin: 0 0 24px 0;
+}
+#sec1 table tbody tr input{
+  display: block;
+  width: 100%;
+}
+#sec1 table tbody tr td.have-label{
+  display: grid;
+  grid-template-columns: 0 auto;
+}
+#sec1 table tbody tr td.have-label .input-box input{
+  text-align: center;
+}
+#sec1 table tbody tr td.have-label label{
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+}
+#sec1 table tbody tr td.check{
+  grid-area: 1/1/2/2;
+}
+#sec1 table tbody tr td.check label{
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  background: url("../../img/icon/check.svg") no-repeat center / auto;
+}
+#sec1 table tbody tr td.check input:checked + label{
+  background: url("../../img/icon/checked.svg") no-repeat center / auto;
+}
+#sec1 table tbody tr td.check input{
+  display: none;
+}
+#sec1 table tbody tr td.thum-img{
+  grid-area: 1/2/2/3;
+}
+#sec1 table tbody tr td.thum-img img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#sec1 table tbody tr td.product-info{
+  grid-area: 1/3/2/7;
+}
+#sec1 table tbody tr td.product-info .product-name{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+#sec1 table tbody tr td.product-info .price .before-discount{
+  font-size: 12px;
+  color: var(--secondary-color);
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+#sec1 table tbody tr td.product-info .price .after-discount{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+#sec1 table tbody tr td.product-count{
+  grid-area: 1/7/2/9;
+}
+#sec1 table tbody tr td.product-count .input-box{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 24px auto 24px;
+  gap: 8px;
+}
+#sec1 table tbody tr td.product-count .input-box span{
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#sec1 table tbody tr td.product-count .input-box span.minus-btn{
+  background: url("../../img/icon/minus.svg") no-repeat center / auto;
+}
+#sec1 table tbody tr td.product-count .input-box span.plus-btn{
+  background: url("../../img/icon/plus.svg") no-repeat center / auto;
+}
+#sec1 table tbody tr td.product-count .input-box span.minus-btn:hover{
+  background: url("../../img/icon/minus-hover.svg") no-repeat center / auto;
+}
+#sec1 table tbody tr td.product-count .input-box span.plus-btn:hover{
+  background: url("../../img/icon/plus-hover.svg") no-repeat center / auto;
+}
+#sec1 table tbody tr td.product-count .input-box input{
+  font-size: 14px;
+  line-height: 22px;
+}
+#sec1 table tbody tr td.product-count .input-box input::-webkit-outer-spin-button,
+#sec1 table tbody tr td.product-count .input-box input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+#sec1 table tbody tr td.total-price{
+  grid-area: 1/9/2/11;
+}
+#sec1 table tbody tr td.total-price input{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#sec1 table tbody tr td.discount-price{
+  grid-area: 1/11/2/12;
+}
+#sec1 table tbody tr td.discount-price input{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#sec1 table tbody tr td.delete-btn{
+  grid-area: 1/12/2/13;
+}
+#sec1 table tbody tr td.delete-btn img{
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#sec1 .empty-cart{
+  display: none;
+  padding: 200px 0;
+  text-align: center;
+}
+#sec1 .empty-cart p{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 16px;
+}
+#sec1 .empty-cart a{
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+  color: var(--onPrimary-color);
+  font-size: 18px;
+  font-weight: 500px;
+}
+/*seciton2*/
+#sec2 .inner{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+#sec2 .caution{
+  grid-area: 1/2/2/7;
+}
+#sec2 .caution .txt-box{
+  margin: 0 0 16px 0;
+}
+#sec2 .caution .txt-box p{
+  font-size: 14px;
+}
+#sec2 .buy-summary{
+  grid-area: 1/8/2/13;
+  padding: 32px;
+  background-color: var(--background-color);
+}
+#sec2 .buy-summary .price-details li{
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: auto auto;
+  padding: 0 0 16px 0;
+}
+#sec2 .buy-summary .price-details li label{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--txt2-color);
+}
+#sec2 .buy-summary .price-details li .input-box input{
+  display: inline-block;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  line-height: 24px;
+  color: var(--txt2-color);
+}
+#sec2 .buy-summary .price-details li .input-box span{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--txt2-color);
+}
+#sec2 .buy-summary .price-details li:nth-child(3){
+  border-bottom: 1px solid var(--border-color);
+}
+#sec2 .buy-summary .price-details li:nth-child(3) label{
+  color: var(--secondary-color);
+}
+#sec2 .buy-summary .price-details li:nth-child(3) .input-box input{
+  color: var(--secondary-color);
+}
+#sec2 .buy-summary .price-details li:nth-child(3) .input-box span{
+  color: var(--secondary-color);
+}
+#sec2 .buy-summary .price-details li:nth-child(4){
+  padding: 16px 0 24px;
+}
+#sec2 .buy-summary .price-details li:nth-child(4) label{
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--txt1-color);
+}
+#sec2 .buy-summary .price-details li:nth-child(4) .input-box input{
+  color: var(--txt1-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+#sec2 .buy-summary .price-details li:nth-child(4) .input-box span{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--txt1-color);
+}
+#sec2 .buy-summary button{
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: var(--onPrimary-color);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 16px 8px;
+}
+@media only screen and (max-width: 768px) {
+  /*layout*/
+  .container{
+    padding: 0 32px;
+  }
+  .container section .inner{
+    max-width: 704px;
+  }
+  /*section1*/
+  #sec1 table{
+    margin: 24px 0;
+    border-bottom: none;
+  }
+  #sec1 table thead tr{
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+  #sec1 table thead tr th:not(.mobile){
+    display: none;
+  }
+  #sec1 table thead tr th:nth-child(1) label{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/icon/check.svg") no-repeat center / 20px;
+  }
+  #sec1 table thead tr th:nth-child(1) input:checked + label{
+    background: url("../../img/icon/checked.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody{
+    margin: 0;
+  }
+  #sec1 table tbody tr{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, minmax(24px, auto));
+    gap: 8px 16px;
+    margin: 0;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  #sec1 table tbody tr td.have-label{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #sec1 table tbody tr td.have-label label{
+    grid-area: 1/1/2/3;
+    font-size: 14px;
+    font-weight: 500;
+    height: auto;
+    line-height: 24px;
+  }
+  #sec1 table tbody tr td.have-label .input-box{
+    grid-area: 1/6/2/7;
+  }
+  #sec1 table tbody tr td.have-label .input-box input{
+    text-align: right;
+  }
+  #sec1 table tbody tr td input{
+    display: block;
+    width: 100%;
+  }
+  #sec1 table tbody tr td.check label{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    background: url("../../img/icon/check.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody tr td.check input:checked + label{
+    background: url("../../img/icon/checked.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody tr td.thum-img{
+    grid-area: 2/1/3/2;
+  }
+  #sec1 table tbody tr td.product-info{
+    grid-area: 2/2/3/7;
+    padding: 8px 0;
+  }
+  #sec1 table tbody tr td.product-count{
+    grid-area: 3/1/4/7;
+  }
+  #sec1 table tbody tr td.product-count .input-box{
+    grid-template-columns: 20px auto 20px;
+  }
+  #sec1 table tbody tr td.product-count .input-box span{
+    width: 20px;
+    height: 20px;
+  }
+  #sec1 table tbody tr td.product-count .input-box span.minus-btn{
+    background: url("../../img/icon/minus.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody tr td.product-count .input-box span.plus-btn{
+    background: url("../../img/icon/plus.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody tr td.product-count .input-box span.minus-btn:hover{
+    background: url("../../img/icon/minus-hover.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody tr td.product-count .input-box span.plus-btn:hover{
+    background: url("../../img/icon/plus-hover.svg") no-repeat center / 20px;
+  }
+  #sec1 table tbody tr td.product-count .input-box input{
+    text-align: center;
+  }
+  #sec1 table tbody tr td.total-price{
+    grid-area: 5/1/6/7;
+  }
+  #sec1 table tbody tr td.total-price label{
+    font-weight: 700;
+  }
+  #sec1 table tbody tr td.discount-price{
+    grid-area: 4/1/5/7;
+  }
+  #sec1 table tbody tr td.delete-btn{
+    grid-area: 1/6/2/7;
+  }
+  #sec1 table tbody tr td.delete-btn img{
+    margin: 0 0 0 auto;
+  }
+  /*seciton2*/
+  #sec2 .inner{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    gap: 16px;
+  }
+  #sec2 .caution{
+    grid-area: 1/1/2/7;
+  }
+  #sec2 .buy-summary{
+    grid-area: 2/1/3/7;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /*layout*/
+  .container{
+    padding: 0 20px;
+  }
+  .container section .inner{
+    max-width: 320px;
+  }
+  /*section1*/
+  #sec1 table tbody tr td.have-label label{
+    grid-area: 1/1/3/3;
+  }
+  #sec1 table tbody tr td.have-label .input-box{
+    grid-area: 1/5/2/7;
+  }
+  #sec1 table tbody tr td.thum-img{
+    grid-area: 2/1/3/3;
+  }
+  #sec1 table tbody tr td.product-info{
+    grid-area: 2/3/3/7;
+  }
+  /*section2*/
+  #sec2 .buy-summary .price-details li label{
+    font-size: 14px;
+  }
+  #sec2 .buy-summary .price-details li:nth-child(4) label{
+    font-size: 16px;
+  }
+  #sec2 .buy-summary .price-details li:nth-child(4) .input-box input{
+    font-size: 14px;
+  }
+  #sec2 .buy-summary .price-details li:nth-child(4) .input-box span{
+    font-size: 14px;
+  }
+}
